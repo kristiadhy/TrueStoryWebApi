@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueStoryWebApi", "TrueStoryWebApi\TrueStoryWebApi.csproj", "{33F18F6E-6521-4C9E-836B-3013E021D721}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33F18F6E-6521-4C9E-836B-3013E021D721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F18F6E-6521-4C9E-836B-3013E021D721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F18F6E-6521-4C9E-836B-3013E021D721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F18F6E-6521-4C9E-836B-3013E021D721}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E63FA7EF-CE15-4D7F-9941-9ECF70970A5B}
+	EndGlobalSection
+EndGlobal
