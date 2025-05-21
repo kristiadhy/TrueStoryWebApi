@@ -25,9 +25,7 @@ namespace TrueStoryWebApi.Controllers
       var content = await apiResponse.Content.ReadFromJsonAsync<List<Product>>();
 
       if (content == null || content.Count == 0)
-      {
-        return Ok(new List<Product>());
-      }
+        return NotFound();
 
       var filtered = content
           .Where(u => u.Name.Contains(name, StringComparison.OrdinalIgnoreCase))
@@ -42,6 +40,9 @@ namespace TrueStoryWebApi.Controllers
     public async Task<IActionResult> GetProductById(int id)
     {
       var apiResponse = await _httpClient.GetFromJsonAsync<Product>($"objects/{id}");
+      if (apiResponse == null)
+        return NotFound(new { message = $"Object with id = {id} not found." });
+
       return Ok(apiResponse);
     }
 
